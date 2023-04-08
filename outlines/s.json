@@ -1,0 +1,257 @@
+{
+    "technical": {
+        "length": {
+            "units": "words",
+            "prompt": "The story's length should be: (words, scale(chapter, novel, etc))",
+            "input": null,
+            "sub_fields": {}
+        },
+        "POV": {
+            "units": "one word",
+            "prompt": "The story's POV should be: (1, 2, 3(limited, omnipresent))",
+            "input": null,
+            "sub_fields": {}
+        },
+        "tone": {
+            "units": "couple words",
+            "prompt": "The story's tone should be: (serious, lighthearted, etc)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "style": {
+            "units": "couple words",
+            "prompt": "The story's style should be: (descriptive, dialogue-driven, linear, etc)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "pace": {
+            "units": "couple words",
+            "prompt": "The story's pace should be: (fast-paced, slow, mixed)",
+            "input": "ss",
+            "sub_fields": {}
+        },
+        "writing_style_preferences": {
+            "units": "couple words",
+            "prompt": "The story's writing style preferences: (poetic, straightforward, experimental)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "genre": {
+            "units": "couple words",
+            "prompt": "Genre: (adventure, romance, mystery, sci-fi, fantasy, etc)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "subgenre": {
+            "units": "couple words",
+            "prompt": "Subgenre: (if applicable)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "theme": {
+            "units": "couple words",
+            "prompt": "Theme(s): (love, friendship, power, redemption, etc)",
+            "input": null,
+            "sub_fields": {}
+        }
+    },
+    "characters": {
+        "main_character": {
+            "units": "short summary",
+            "prompt": "Main character summary: (5-10 words)",
+            "input": "",
+            "sub_fields": {
+                "name": {
+                    "units": "name",
+                    "prompt": "Main character name: (name)",
+                    "input": null
+                },
+                "age": {
+                    "units": "number",
+                    "prompt": "Main character age: (number)",
+                    "input": null
+                },
+                "occupation": {
+                    "units": "short summary",
+                    "prompt": "Main character's occupation: (short summary)",
+                    "input": null
+                }
+            }
+        },
+        "villain": {
+            "units": "short summary",
+            "prompt": "Villain summary: (5-10 words)",
+            "input": "",
+            "sub_fields": {
+                "name": {
+                    "units": "name",
+                    "prompt": "villian's name: (name)",
+                    "input": null
+                },
+                "age": {
+                    "units": "number",
+                    "prompt": "villian's age: (number)",
+                    "input": null
+                },
+                "occupation": {
+                    "units": "short summary",
+                    "prompt": "villian's occupation: (short summary)",
+                    "input": null
+                },
+                "reason": {
+                    "units": "short summary",
+                    "prompt": "What's the reason the villian is evil? (short summary)",
+                    "input": "ss"
+                }
+            },
+            "secondary_characters": {
+                "units": "short summary",
+                "prompt": "Secondary character(s) summary: (5-10 words)",
+                "input": "",
+                "sub_fields": {
+                    "name": {
+                        "units": "name",
+                        "prompt": "Secondary character name: (name)",
+                        "input": ""
+                    },
+                    "age": {
+                        "units": "number",
+                        "prompt": "Secondary character age: (number)",
+                        "input": ""
+                    },
+                    "occupation": {
+                        "units": "short summary",
+                        "prompt": "Secondary character's occupation: (short summary)",
+                        "input": ""
+                    }
+                }
+            },
+            "relationships": {
+                "units": "couple words",
+                "prompt": "Relationship dynamics: (family, friends, romance, rivals)",
+                "input": "",
+                "sub_fields": {}
+            },
+            "motivations_and_goals": {
+                "units": "short summary",
+                "prompt": "Character motivations and goals: (short summary)",
+                "input": "",
+                "sub_fields": {}
+            }
+        }
+    },
+    "plot": {
+        "main_conflict": {
+            "units": "short summary",
+            "prompt": "Main conflict or problem: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "key_events": {
+            "units": "short summary",
+            "prompt": "Key events or turning points: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "resolution": {
+            "units": "short summary",
+            "prompt": "Desired resolution: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "moral_dilemmas": {
+            "units": "short summary",
+            "prompt": "Moral dilemmas faced by characters: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        }
+    },
+    "setting": {
+        "time_period": {
+            "units": "couple words",
+            "prompt": "Time period: (past, present, future)",
+            "input": "",
+            "sub_fields": {}
+        },
+        "location": {
+            "units": "short summary",
+            "prompt": "Location: (real or fictional place)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "climate": {
+            "units": "couple words",
+            "prompt": "Climate: (tropical, arctic, temperate, etc)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "culture": {
+            "units": "short summary",
+            "prompt": "Culture: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "worldbuilding": {
+            "units": "short summary",
+            "prompt": "Worldbuilding elements: (magic, technology, society, politics)",
+            "input": null,
+            "sub_fields": {}
+        }
+    },
+    "uncategorized": {
+        "symbolism and motifs": {
+            "units": "short summary",
+            "prompt": "Symbolism and motifs: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "foreshadowing_and_suspense": {
+            "units": "short summary",
+            "prompt": "Foreshadowing and suspense: (short summary)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "humor": {
+            "units": "couple words",
+            "prompt": "Humor: (comedic elements, irony, sarcasm, wordplay)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "diverse_characters": {
+            "units": "short summary",
+            "prompt": "Diverse character representation: (ethnicity, gender identity, sexual orientation, disabilities)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "inspirations_or_influences": {
+            "units": "short summary",
+            "prompt": "Inspirations or influences: (favorite authors, real-life experiences, historical events)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "specific_elements": {
+            "units": "short summary",
+            "prompt": "Specific elements to include: (objects, quotes, cultural references)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "unique_elements_or_twists": {
+            "units": "short summary",
+            "prompt": "Unique elements or twists: (surprising events, unusual character attributes, original concepts)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "target_audience": {
+            "units": "couple words",
+            "prompt": "Target audience: (age group, interests, reading level)",
+            "input": null,
+            "sub_fields": {}
+        },
+        "backstory": {
+            "units": "short summary",
+            "prompt": "Backstory: (main character, secondary character, world history)",
+            "input": null,
+            "sub_fields": {}
+        }
+    }
+}
