@@ -3,55 +3,55 @@
         "length": {
             "units": "words",
             "prompt": "The story's length should be: (words, scale(chapter, novel, etc))",
-            "input": "2000",
+            "input": "1500, novella",
             "sub_fields": {}
         },
         "POV": {
             "units": "one word",
             "prompt": "The story's POV should be: (1, 2, 3(limited, omnipresent))",
-            "input": "3 omnipresent",
+            "input": "3 limited",
             "sub_fields": {}
         },
         "tone": {
             "units": "couple words",
             "prompt": "The story's tone should be: (serious, lighthearted, etc)",
-            "input": null,
+            "input": "lighthearted",
             "sub_fields": {}
         },
         "style": {
             "units": "couple words",
             "prompt": "The story's style should be: (descriptive, dialogue-driven, linear, etc)",
-            "input": null,
+            "input": "descriptive",
             "sub_fields": {}
         },
         "pace": {
             "units": "couple words",
             "prompt": "The story's pace should be: (fast-paced, slow, mixed)",
-            "input": "ss",
+            "input": "fast-paced",
             "sub_fields": {}
         },
         "writing_style_preferences": {
             "units": "couple words",
             "prompt": "The story's writing style preferences: (poetic, straightforward, experimental)",
-            "input": null,
+            "input": "straight-forward",
             "sub_fields": {}
         },
         "genre": {
             "units": "couple words",
             "prompt": "Genre: (adventure, romance, mystery, sci-fi, fantasy, etc)",
-            "input": null,
+            "input": "adventure",
             "sub_fields": {}
         },
         "subgenre": {
             "units": "couple words",
             "prompt": "Subgenre: (if applicable)",
-            "input": null,
+            "input": "fantasy",
             "sub_fields": {}
         },
         "theme": {
             "units": "couple words",
             "prompt": "Theme(s): (love, friendship, power, redemption, etc)",
-            "input": "ss",
+            "input": "power-growth",
             "sub_fields": {}
         }
     },
@@ -64,17 +64,17 @@
                 "name": {
                     "units": "name",
                     "prompt": "Main character name: (name)",
-                    "input": null
+                    "input": "tobias"
                 },
                 "age": {
                     "units": "number",
                     "prompt": "Main character age: (number)",
-                    "input": null
+                    "input": "20"
                 },
                 "occupation": {
                     "units": "short summary",
                     "prompt": "Main character's occupation: (short summary)",
-                    "input": null
+                    "input": "blacksmith"
                 }
             }
         },
@@ -86,22 +86,22 @@
                 "name": {
                     "units": "name",
                     "prompt": "villian's name: (name)",
-                    "input": null
+                    "input": "cruella"
                 },
                 "age": {
                     "units": "number",
                     "prompt": "villian's age: (number)",
-                    "input": null
+                    "input": "50"
                 },
                 "occupation": {
                     "units": "short summary",
                     "prompt": "villian's occupation: (short summary)",
-                    "input": null
+                    "input": "death(stealing souls)"
                 },
                 "reason": {
                     "units": "short summary",
                     "prompt": "What's the reason the villian is evil? (short summary)",
-                    "input": null
+                    "input": "ends peoples lives prematurely"
                 }
             },
             "secondary_characters": {
@@ -144,25 +144,25 @@
         "main_conflict": {
             "units": "short summary",
             "prompt": "Main conflict or problem: (short summary)",
-            "input": null,
+            "input": "villian tries to kill tobias parent, he does not want that",
             "sub_fields": {}
         },
         "key_events": {
             "units": "short summary",
             "prompt": "Key events or turning points: (short summary)",
-            "input": null,
+            "input": "villian attempts murder, tobias stops her, tobias struggles, tobais powers up, tobais fights(struggle is the climax), kills cruella(resolution)",
             "sub_fields": {}
         },
         "resolution": {
             "units": "short summary",
             "prompt": "Desired resolution: (short summary)",
-            "input": "ss",
+            "input": "villian is dead, tobias is triumphant(just barely), parent is surviving though recovering from the villian attack at the beginning",
             "sub_fields": {}
         },
         "moral_dilemmas": {
             "units": "short summary",
             "prompt": "Moral dilemmas faced by characters: (short summary)",
-            "input": "",
+            "input": "killing villian categorize the MC like the villian? ",
             "sub_fields": {}
         }
     },
@@ -170,31 +170,31 @@
         "time_period": {
             "units": "couple words",
             "prompt": "Time period: (past, present, future)",
-            "input": null,
+            "input": "typical fantasy, dark ages with swords and magic",
             "sub_fields": {}
         },
         "location": {
             "units": "short summary",
             "prompt": "Location: (real or fictional place)",
-            "input": null,
+            "input": "drylliad",
             "sub_fields": {}
         },
         "climate": {
             "units": "couple words",
             "prompt": "Climate: (tropical, arctic, temperate, etc)",
-            "input": null,
+            "input": "temperate forest environment",
             "sub_fields": {}
         },
         "culture": {
             "units": "short summary",
             "prompt": "Culture: (short summary)",
-            "input": null,
+            "input": "hard work, honor elders",
             "sub_fields": {}
         },
         "worldbuilding": {
             "units": "short summary",
             "prompt": "Worldbuilding elements: (magic, technology, society, politics)",
-            "input": null,
+            "input": "there is magic, and they are part of a small and quaint remote village with normal facilities for that time period",
             "sub_fields": {}
         }
     },
@@ -208,49 +208,49 @@
         "foreshadowing_and_suspense": {
             "units": "short summary",
             "prompt": "Foreshadowing and suspense: (short summary)",
-            "input": "ss",
+            "input": null,
             "sub_fields": {}
         },
         "humor": {
             "units": "couple words",
             "prompt": "Humor: (comedic elements, irony, sarcasm, wordplay)",
-            "input": null,
+            "input": "comedic situations outside of tense situations, funny quips during battle",
             "sub_fields": {}
         },
         "diverse_characters": {
             "units": "short summary",
             "prompt": "Diverse character representation: (ethnicity, gender identity, sexual orientation, disabilities)",
-            "input": null,
+            "input": "pretty small cast, so none are specified, but feel free itegrate some if it fits",
             "sub_fields": {}
         },
         "inspirations_or_influences": {
             "units": "short summary",
             "prompt": "Inspirations or influences: (favorite authors, real-life experiences, historical events)",
-            "input": "ss",
+            "input": "ispiration(JRR Tolkien)",
             "sub_fields": {}
         },
         "specific_elements": {
             "units": "short summary",
             "prompt": "Specific elements to include: (objects, quotes, cultural references)",
-            "input": null,
+            "input": "normal blacksmithing equipment(hammers, anvil, etc), wands when using magic, perhaps a reference to faciliteis from the time period?",
             "sub_fields": {}
         },
         "unique_elements_or_twists": {
             "units": "short summary",
             "prompt": "Unique elements or twists: (surprising events, unusual character attributes, original concepts)",
-            "input": null,
+            "input": "possiblly the MC knowing who the villain is as a resident of the village?",
             "sub_fields": {}
         },
         "target_audience": {
             "units": "couple words",
             "prompt": "Target audience: (age group, interests, reading level)",
-            "input": null,
+            "input": "young adults, typical reading level",
             "sub_fields": {}
         },
         "backstory": {
             "units": "short summary",
             "prompt": "Backstory: (main character, secondary character, world history)",
-            "input": null,
+            "input": "it is a world enjoying calm after a long history of war with animals(dragons etc) and humans against each other",
             "sub_fields": {}
         }
     }

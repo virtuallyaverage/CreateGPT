@@ -1,7 +1,7 @@
 import json
 from colorama import init, Fore, Style
 
-with open("user_defined_elements.json", "r") as file:
+with open("outlines/user_defined_elements.json", "r") as file:
     elements = json.load(file)
   
 # Initialize colorama on Windows
@@ -75,11 +75,11 @@ for subdivision, _ in elements.items():
                 print(Fore.CYAN+f"{subfield_name}: "+f"{subfield['input']}"+Style.RESET_ALL)
                 
                 
-file_name = input("file name? (no file extension e.g. .json)")        
+file_name = input("file name? (no file extension e.g. .json) ")        
     
    
     
-with open(f"{file_name}.json", "w") as file:
+with open(f"outlines/{file_name}.json", "w") as file:
     json.dump(elements, file, indent=4)
     
 print(Fore.GREEN+"Outline created!"+Style.RESET_ALL)
