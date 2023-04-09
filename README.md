@@ -15,10 +15,11 @@ This tool is meant to automate a large part of the data formatting and structuri
 * you can run ```python modules/module_name/module_name.py``` to directly access a module without having to select it.
 
 # What Currently Works
-Story Writer    | Prompting methods | Completeness
-------------- | -------------       |----------------
-element  | Fill Uspecified          |Finished
-element  | Get Outline          |85%
-element  | Write Section          |60%
-element  | fix/reflect section          |50%
-element  | Combine sections       |20%
+___Story Writer___
+Prompting methods | Completeness
+-------------       |----------------
+Fill Uspecified          |Finished
+Get Outline          |85%
+Write Section          |60%
+fix/reflect section          |50%
+Combine sections       |20%
