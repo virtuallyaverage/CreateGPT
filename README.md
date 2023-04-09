@@ -19,7 +19,7 @@ ___Story Writer___
 Prompting methods | Completeness
 -------------       |----------------
 Fill Uspecified          |Finished
-Get Outline          |85%
-Write Section          |60%
+Get Outline          |Finished
+Write Section          |Finished
 fix/reflect section          |50%
 Combine sections       |20%
