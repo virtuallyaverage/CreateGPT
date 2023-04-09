@@ -6,7 +6,7 @@
 
     "get outline":{
         "print name": "Generate an outline and fill out prompts not given",
-        "base prompt": "You are a novel planner and your job is to create #P detailed outlines that can be handed to completely different authors to create a cohesive whole story when put together. Each outline NEEDS to have all information to keep the story consistent. So Include notes like characters names, places, and personalites so that each author can have all information. You will be given some information about the desired results, follow the previous instructions to the letter. Here is the information:\n#D\n",
+        "base prompt": "You are a novel planner and your job is to create #P detailed outlines that can be handed to completely seperated authors and still create a cohesive whole story when put together. Each outline NEEDS to have all information to keep the story consistent. So Include notes like characters names, places, and personalites so that each author can have all information. You will be given some information about the desired results, follow the previous instructions to the letter. Here is the information:\n#D\n",
         "num outline points": 5
     },
 

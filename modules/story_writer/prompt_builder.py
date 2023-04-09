@@ -31,6 +31,16 @@ class PromptBuilder():
         
         return formatted_prompt
     
+    def writeASection(self, outline:str, data:str, step_info:dict):
+        prompt:str  = step_info['base prompt']
+        
+        # Replace the keys with named placeholders
+        prompt = prompt.replace("#D", "{data}")
+        prompt = prompt.replace("#O", "{outline}")
+
+        # Insert the variables into their respective placeholders
+        formatted_prompt = prompt.format(data=data, parts=outline)
+        return formatted_prompt
     
     def condense_dict(self, d:dict, separator='|'):
         condensed = []

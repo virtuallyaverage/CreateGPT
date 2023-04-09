@@ -106,19 +106,23 @@ while True:
         
     
     elif step_to_perform_name == 'write piece':
-        print("writing apiec of work")
-        pass
+        user_outline = input("Please give a very detailed outline of the story part you are working on: ")
+        user_data = input("Please give the story data generated earlier: ")
+        
+        prompt = prompt_builder.writeASection(user_outline, user_data, step_to_perform)
+
+
     elif step_to_perform_name == 'reflect piece':
-        print("reflecting on the piece of work")
+        prompt = "Not implemented yet, please use a different option"
         pass
     elif step_to_perform_name == 'combine parts':
-        print("combine two parts")
+        prompt = "Not implemented yet, please use a different option"
         pass
     elif step_to_perform_name == '':
-        print("nothing")
+        prompt = "something went really wrong, please try again"
         pass
     
     print(Fore.GREEN+f"Prompt for {step_to_perform_name}:\n\n")
-    print(prompt+"\n\n")
+    print({prompt}+"\n\n")
 
 print("Finished the story writer program")
