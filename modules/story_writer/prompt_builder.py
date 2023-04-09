@@ -8,6 +8,8 @@ class PromptBuilder():
         
         #trim the data
         trimmed_data = self.trimData(outline_data)
+        #condense to string
+        trimmed_data = self.condense_dict(trimmed_data)
         
         # Replace the keys with named placeholders
         prompt = prompt.replace("#D", "{data}")
@@ -17,7 +19,21 @@ class PromptBuilder():
         
         return formatted_prompt
     
-    
+    def condense_dict(self, d:dict, separator='|'):
+        condensed = []
+        
+        for k, v in d.items():
+            key = k  # Use the first 3 characters of the key as an abbreviation
+            
+            if isinstance(v, dict):
+                condensed_v = self.condense_dict(v, separator=separator)
+                condensed.append(f"{key}({condensed_v})")
+            else:
+                value = 'N' if v is None else v  # Represent None values with 'N'
+                condensed.append(f"{value}")
+        
+        return separator.join(condensed)
+
     def trimData(self, outline_data:dict):
         #itterate through the subdivision of topics
         for subdivision, _ in outline_data.items():
