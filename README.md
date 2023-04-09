@@ -1,5 +1,5 @@
 # CreateGPT
-This is a modular command-line tool to generate structured prompts, which can be used to create things like long-form cohesive writing and larger coding projects
+This is a modular command-line framework to generate structured prompts, which can be used to create things like long-form cohesive writing and larger coding projects
 Note: Though there is very limited functionality at the moment, many more modules and features are planned for the future
 
 # About
