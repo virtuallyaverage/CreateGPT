@@ -98,11 +98,13 @@ while True:
     if step_to_perform_name == 'fill in':
         prompt = prompt_builder.FillInStep(outline, step_to_perform)
         
-        print(Fore.GREEN+"Prompt for extrapolating the given data:")
-        print(prompt)
     elif step_to_perform_name == 'get outline':
-        print("doing get outline step")
-        pass
+        data = input("What terms do you want to base the prompt off of?")
+        num_to_split = input("how many elements should the story be split into? (3-7) ")
+        
+        prompt = prompt_builder.getOutline(data, num_to_split, step_to_perform)
+        
+    
     elif step_to_perform_name == 'write piece':
         print("writing apiec of work")
         pass
@@ -115,5 +117,8 @@ while True:
     elif step_to_perform_name == '':
         print("nothing")
         pass
+    
+    print(Fore.GREEN+f"Prompt for {step_to_perform_name}:\n\n")
+    print(prompt+"\n\n")
 
 print("Finished the story writer program")

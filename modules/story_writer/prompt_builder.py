@@ -4,7 +4,6 @@ class PromptBuilder():
     
     def FillInStep(self, outline_data:dict, step_info:dict) -> str:
         prompt:str  = step_info['base prompt']
-        prompt_parts:list = prompt.split('#')
         
         #trim the data
         trimmed_data = self.trimData(outline_data)
@@ -18,6 +17,20 @@ class PromptBuilder():
         formatted_prompt = prompt.format(data=trimmed_data)
         
         return formatted_prompt
+    
+    def getOutline(self, outline_data:str, num_parts:str, step_info:dict) -> str:
+        
+        prompt:str  = step_info['base prompt']
+        
+        # Replace the keys with named placeholders
+        prompt = prompt.replace("#D", "{data}")
+        prompt = prompt.replace("#P", "{parts}")
+
+        # Insert the variables into their respective placeholders
+        formatted_prompt = prompt.format(data=outline_data, parts=num_parts)
+        
+        return formatted_prompt
+    
     
     def condense_dict(self, d:dict, separator='|'):
         condensed = []
@@ -46,7 +59,6 @@ class PromptBuilder():
                 #see if we have sub fields to work with
                 if len(working_element['sub_fields']) <= 0:
                     working_element.pop('sub_fields')
-                    print("no subfields")
                 
                 else:
                     #itterate through the subfields
