@@ -1,0 +1,27 @@
+{
+    "fill in":{
+        "print name": "Fill in missing parts from the outline",
+        "base prompt":"Given this information about a creative work, sorted by category:\n#D\nKeep the exact same format(that is important) but everywhere where 'None' is the answer infer an answer that would fit well with the rest of the given information. The goal with this data is to fully define a story without writing it, so feel free to add any information in a section at the end labeled 'AI recommendations'. Don't add that information anywhere else"
+    },
+
+    "get outline":{
+        "print name": "Generate an outline and fill out prompts not given",
+        "base prompt": "You are a novel planner and your job is to create #P detailed outlines that can be handed to completely different authors to create a cohesive whole story when put together. Each outline NEEDS to have all information to keep the story consistent. So Include notes like characters names, places, and personalites so that each author can have all information. You will be given some information about the desired results, follow the instructions to the letter. Here is the information:\n#D\n",
+        "num outline points": 5
+    },
+
+    "write piece":{
+        "print name": "Write a section given an written outline, and outline from inputs. (less than 500 words is ideal)",
+        "base prompt": "You are an assitant writer given the task of writing a small piece of a creative work from a detailed outline and relevant information pertaining to the story. Here is the outline:\n#O\nAnd the other story information:\n#D\nMake sure to stick to the information you are given so that the end result fits with the rest of the story, THIS IS VERY VERY IMPORTANT."
+    },
+
+    "reflect piece":{
+        "print name":"(more for future use)Have GPT check it's results for accuracy (MUCH more effective when using GPT4)",
+        "base prompt":"Reflect on this section of a creative writing, it is section #N in the provide outline. Check that it is coherent, immersive, and consistent with the given information and fits well with the rest of the story plan.\nHere is the Section: #S\nOther information relevant to the whole story grouped by category: #D"
+    },
+
+    "combine parts":{
+        "print name":"Combine the story parts into a whole",
+        "base prompt":"not there yet"
+    }
+}

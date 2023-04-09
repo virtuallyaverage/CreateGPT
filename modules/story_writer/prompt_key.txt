@@ -1,0 +1,6 @@
+prompt key:
+#N = section number on the outline
+#P = number of outline parts, should be number of words/700-500ish
+#O = section @ a given outline point
+#S = written section, usually correspoinding to a #N
+#D = outline data (gathered from the prompting)

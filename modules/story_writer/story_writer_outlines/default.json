@@ -103,41 +103,41 @@
                     "prompt": "What's the reason the villian is evil? (short summary)",
                     "input": null
                 }
-            },
-            "secondary_characters": {
-                "units": "short summary",
-                "prompt": "Secondary character(s) summary: (5-10 words)",
-                "input": "",
-                "sub_fields": {
-                    "name": {
-                        "units": "name",
-                        "prompt": "Secondary character name: (name)",
-                        "input": ""
-                    },
-                    "age": {
-                        "units": "number",
-                        "prompt": "Secondary character age: (number)",
-                        "input": ""
-                    },
-                    "occupation": {
-                        "units": "short summary",
-                        "prompt": "Secondary character's occupation: (short summary)",
-                        "input": ""
-                    }
-                }
-            },
-            "relationships": {
-                "units": "couple words",
-                "prompt": "Relationship dynamics: (family, friends, romance, rivals)",
-                "input": "",
-                "sub_fields": {}
-            },
-            "motivations_and_goals": {
-                "units": "short summary",
-                "prompt": "Character motivations and goals: (short summary)",
-                "input": "",
-                "sub_fields": {}
             }
+        },
+        "secondary_characters": {
+            "units": "short summary",
+            "prompt": "Secondary character(s) summary: (5-10 words)",
+            "input": "",
+            "sub_fields": {
+                "name": {
+                    "units": "name",
+                    "prompt": "Secondary character name: (name)",
+                    "input": ""
+                },
+                "age": {
+                    "units": "number",
+                    "prompt": "Secondary character age: (number)",
+                    "input": ""
+                },
+                "occupation": {
+                    "units": "short summary",
+                    "prompt": "Secondary character's occupation: (short summary)",
+                    "input": ""
+                }
+            }
+        },
+        "relationships": {
+            "units": "couple words",
+            "prompt": "Relationship dynamics: (family, friends, romance, rivals)",
+            "input": "",
+            "sub_fields": {}
+        },
+        "motivations_and_goals": {
+            "units": "short summary",
+            "prompt": "Character motivations and goals: (short summary)",
+            "input": "",
+            "sub_fields": {}
         }
     },
     "plot": {

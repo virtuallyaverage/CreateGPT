@@ -1,5 +1,9 @@
 from colorama import init, Fore, Style
 import json
+from os import getcwd
+from os.path import join
+
+module_folder = join(getcwd(), 'modules', "story_writer")
 
 # Initialize colorama on Windows
 init()  
@@ -21,7 +25,7 @@ while should_quit == False:
         
         
     if user_selection < len(program_options) and user_selection >= 0:
-        print(f"starting operation: {program_options[user_selection]}\n")
+        print(f"starting operation: {program_options[user_selection]}")
         should_quit = True
         #package into tuple of the name and index of the value
         program_selected = program_options[user_selection]
@@ -34,7 +38,7 @@ from work_outline import WorkOutline
 instance = WorkOutline()
 if program_selected == "Create new Outline":
     outline = instance.newOutline()
-    should_save = input(Fore.CYAN+"Save the created outline? The Outline CANNOT be saved at another time (y/n) ")
+    should_save = input(Fore.GREEN+"Save the created outline? The Outline CANNOT be saved at another time (y/n) ")
     if should_save == "y":
         outline_name = input("Outline Name: ")
         instance.SaveOutline(outline, outline_name)
@@ -59,8 +63,57 @@ elif program_selected == "Use Predefined Outline":
     chosen_index = int(input(f"Which outline you would like to use? (1-{len(outline_options)} )"))-1
     file_name =  outline_options[chosen_index]
     outline = instance.LoadOutline(file_name)
-    print(f"Loaded outline named: {file_name[:-5]}")
+    print(f"Loaded outline named: {file_name[:-5]}\n")
     
+#if we need to load the random thing
+elif program_selected == "Create a Randomized Story (not recommended)":
+    outline = instance.LoadOutline("random.json")
+    print("")
+    
+    
+############start generating prompts
+from prompt_builder import PromptBuilder
+prompt_builder = PromptBuilder(outline)
+with open(join(module_folder, 'steps.json'), "r") as file:
+    step_sequence = json.load(file)
 
+step_to_perform = ''
+while True:
+    print(Fore.CYAN+"Which step to do?:")
+    step_name_index = []
+    index = 1
+    for step_name, step in step_sequence.items():
+        print(f"{index}) {step_name}; {step['print name']}")
+        index += 1
+        step_name_index.append(step_name)
+        
+    step_to_perform_index= input(f"which step do you want to work on? (1-{len(step_name_index)}, done) ")
+    if step_to_perform_index != 'done':
+        step_to_perform_name = step_name_index[int(step_to_perform_index)-1]
+        step_to_perform = step_sequence[step_to_perform_name]
+    else:
+        break
+    
+    #see which result we go to
+    if step_to_perform_name == 'fill in':
+        prompt = prompt_builder.FillInStep(outline, step_to_perform)
+        
+        print(Fore.GREEN+"Prompt for extrapolating the given data:")
+        print(prompt)
+    elif step_to_perform_name == 'get outline':
+        print("doing get outline step")
+        pass
+    elif step_to_perform_name == 'write piece':
+        print("writing apiec of work")
+        pass
+    elif step_to_perform_name == 'reflect piece':
+        print("reflecting on the piece of work")
+        pass
+    elif step_to_perform_name == 'combine parts':
+        print("combine two parts")
+        pass
+    elif step_to_perform_name == '':
+        print("nothing")
+        pass
 
 print("Finished the story writer program")
