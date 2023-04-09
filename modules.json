@@ -1,0 +1,6 @@
+{
+    "Story Writer":{
+        "short description": "Design a series of prompts for writing a long form story",
+        "file name": "story_writer.py"
+    }
+}
