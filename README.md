@@ -15,7 +15,7 @@ This tool is meant to automate a large part of the data formatting and structuri
 * you can run ```python modules/module_name/module_name.py``` to directly access a module without having to select it.
 
 # What Currently Works
-module name     | Prompting methods | Completeness
+Story Writer    | Prompting methods | Completeness
 ------------- | -------------       |----------------
 element  | Fill Uspecified          |Finished
 element  | Get Outline          |85%
